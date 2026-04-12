@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masterclass Bundle - CBD Mentorship</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        shopee: '#EE4D2D'
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #050505;
+            color: #e4e4e7;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        .timeline-line {
+            background: linear-gradient(to bottom, transparent, #27272a 5%, #27272a 95%, transparent);
+        }
+        
+        .glass-card {
+            background: rgba(24, 24, 27, 0.4);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(63, 63, 70, 0.3);
+            transition: all 0.3s ease;
+        }
+        .glass-card:hover {
+            background: rgba(39, 39, 42, 0.6);
+            border-color: rgba(161, 161, 170, 0.4);
+        }
+
+        .outline-text {
+            color: transparent;
+            -webkit-text-stroke: 1px rgba(113, 113, 122, 0.2);
+        }
+    </style>
+</head>
+<body class="w-full relative selection:bg-zinc-800 selection:text-white pb-24">
+
+    <div class="fixed inset-0 z-0 overflow-hidden pointer-events-none">
+        <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2000&auto=format&fit=crop" alt="Ambient Background" class="w-full h-full object-cover opacity-[0.08] blur-[50px] scale-110">
+        <div class="absolute inset-0 bg-gradient-to-b from-[#050505]/40 via-[#050505]/80 to-[#050505]"></div>
+    </div>
+
+    <div class="sticky top-0 z-50 bg-[#050505]/80 backdrop-blur-xl border-b border-zinc-900 px-5 py-4 flex items-center gap-4">
+        <a href="https://cuanberkahdigital.web.id" class="w-8 h-8 flex items-center justify-center bg-zinc-900 rounded-full border border-zinc-800 hover:bg-zinc-800 transition-colors">
+            <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path></svg>
+        </a>
+        <div>
+            <h1 class="text-[13px] sm:text-[14px] font-bold text-white tracking-wide leading-tight">Masterclass Bundle</h1>
+            <p class="text-[9px] text-zinc-500 font-medium tracking-widest uppercase">Ecosystem Library</p>
+        </div>
+    </div>
+
+    <main class="max-w-screen-lg mx-auto pt-10 sm:pt-14 px-4 sm:px-8 relative z-10">
+        
+        <section class="mb-16 sm:mb-24 text-center max-w-2xl mx-auto opacity-0 animate-fade-in-up">
+            <div class="inline-flex items-center gap-2 bg-zinc-900/80 border border-zinc-800 px-4 py-2 rounded-full mb-5 backdrop-blur-md">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/fe/Shopee.svg" alt="Shopee Logo" class="h-3.5 sm:h-4 object-contain grayscale opacity-80">
+                <span class="text-[10px] sm:text-[11px] font-bold uppercase tracking-widest text-zinc-300">Premium Kit</span>
+            </div>
+            
+            <h2 class="text-[28px] sm:text-[44px] font-black text-white leading-[1.15] tracking-tight mb-5">
+                Satu Bundle.<br>
+                <span class="text-zinc-400">Sepuluh Langkah Terstruktur.</span>
+            </h2>
+            
+            <p class="text-[13px] sm:text-[15px] text-zinc-400 leading-relaxed max-w-[90%] mx-auto">
+                Panduan komprehensif yang dirancang untuk mengoptimalkan operasional toko Anda. Mulai dari pemahaman fondasi dasar hingga penerapan strategi lanjutan, semuanya disusun secara sistematis agar lebih mudah dipraktikkan.
+            </p>
+
+            <div class="flex flex-wrap items-center justify-center gap-3 mt-8">
+                <div class="flex items-center gap-2 text-zinc-300 bg-zinc-900/50 border border-zinc-800/50 px-4 py-2 rounded-full">
+                    <span class="text-sm"></span>
+                    <span class="text-[11px] sm:text-[12px] font-medium tracking-wide">10 Detail Kelas</span>
+                </div>
+                <div class="flex items-center gap-2 text-zinc-300 bg-zinc-900/50 border border-zinc-800/50 px-4 py-2 rounded-full">
+                    <span class="text-sm"></span>
+                    <span class="text-[11px] sm:text-[12px] font-medium tracking-wide">Akses Rekaman Selamanya</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="relative max-w-4xl mx-auto pb-10">
+            
+            <div class="absolute left-1/2 top-0 bottom-0 w-[1px] -translate-x-1/2 timeline-line z-0"></div>
+
+            <div class="relative flex items-center w-full mb-10 sm:mb-16 group opacity-0 animate-fade-in-up" style="animation-delay: 100ms;">
+                <div class="w-[46%] flex justify-end pr-3 sm:pr-8">
+                    <div class="glass-card p-4 sm:p-8 rounded-[16px] sm:rounded-[24px] text-right w-full relative overflow-hidden">
+                        <div class="text-[8px] sm:text-[11px] font-bold text-shopee mb-1.5 uppercase tracking-widest">Modul 1</div>
+                        <h3 class="text-[12px] sm:text-[18px] font-bold text-white mb-2 sm:mb-3 leading-snug">Bikin Produk Ditemukan & Dibeli</h3>
+                        <p class="text-[9.5px] sm:text-[14px] text-zinc-400 leading-relaxed">Mempelajari alur kerja pencarian Shopee, menentukan kata kunci relevan, dan menyusun detail produk agar lebih mudah diakses pembeli.</p>
+                    </div>
+                </div>
+                <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-6 h-6 sm:w-10 sm:h-10 rounded-full bg-zinc-950 border-2 border-zinc-700 flex items-center justify-center z-20 group-hover:border-zinc-400 transition-colors">
+                    <span class="text-[9px] sm:text-[13px] font-bold text-zinc-400 group-hover:text-white">01</span>
+                </div>
+                <div class="w-[46%] hidden md:flex pl-8 items-center">
+                    <div class="text-[100px] font-black outline-text opacity-30 select-none">01</div>
+                </div>
+            </div>
+
+            <div class="relative flex items-center justify-end w-full mb-10 sm:mb-16 group opacity-0 animate-fade-in-up" style="animation-delay: 150ms;">
+                <div class="w-[46%] hidden md:flex justify-end pr-8 items-center">
+                    <div class="text-[100px] font-black outline-text opacity-30 select-none">02</div>
+                </div>
+                <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-6 h-6 sm:w-10 sm:h-10 rounded-full bg-zinc-950 border-2 border-zinc-700 flex items-center justify-center z-20 group-hover:border-zinc-400 transition-colors">
+                    <span class="text-[9px] sm:text-[13px] font-bold text-zinc-400 group-hover:text-white">02</span>
+                </div>
+                <div class="w-[46%] flex justify-start pl-3 sm:pl-8">
+                    <div class="glass-card p-4 sm:p-8 rounded-[16px] sm:rounded-[24px] text-left w-full relative overflow-hidden">
+                        <div class="text-[8px] sm:text-[11px] font-bold text-shopee mb-1.5 uppercase tracking-widest">Modul 2</div>
+                        <h3 class="text-[12px] sm:text-[18px] font-bold text-white mb-2 sm:mb-3 leading-snug">Optimasi Konten Visual</h3>
+                        <p class="text-[9.5px] sm:text-[14px] text-zinc-400 leading-relaxed">Fokus pada penyajian visual. Menyusun foto produk dan desain banner yang rapi untuk meningkatkan ketertarikan pengunjung saat melihat halaman toko Anda.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative flex items-center w-full mb-10 sm:mb-16 group opacity-0 animate-fade-in-up" style="animation-delay: 200ms;">
+                <div class="w-[46%] flex justify-end pr-3 sm:pr-8">
+                    <div class="glass-card p-4 sm:p-8 rounded-[16px] sm:rounded-[24px] text-right w-full relative overflow-hidden">
+                        <div class="text-[8px] sm:text-[11px] font-bold text-shopee mb-1.5 uppercase tracking-widest">Modul 3</div>
+                        <h3 class="text-[12px] sm:text-[18px] font-bold text-white mb-2 sm:mb-3 leading-snug">Fondasi Konversi Toko</h3>
+                        <p class="text-[9.5px] sm:text-[14px] text-zinc-400 leading-relaxed">Menata letak toko dan navigasi pencarian barang. Tujuannya adalah menciptakan pengalaman berbelanja yang nyaman dan memudahkan proses transaksi pembeli.</p>
+                    </div>
+                </div>
+                <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-6 h-6 sm:w-10 sm:h-10 rounded-full bg-zinc-950 border-2 border-zinc-700 flex items-center justify-center z-20 group-hover:border-zinc-400 transition-colors">
+                    <span class="text-[9px] sm:text-[13px] font-bold text-zinc-400 group-hover:text-white">03</span>
+                </div>
+                <div class="w-[46%] hidden md:flex pl-8 items-center">
+                    <div class="text-[100px] font-black outline-text opacity-30 select-none">03</div>
+                </div>
+            </div>
+
+            <div class="relative flex items-center justify-end w-full mb-10 sm:mb-16 group opacity-0 animate-fade-in-up" style="animation-delay: 250ms;">
+                <div class="w-[46%] hidden md:flex justify-end pr-8 items-center">
+                    <div class="text-[100px] font-black outline-text opacity-30 select-none">04</div>
+                </div>
+                <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-6 h-6 sm:w-10 sm:h-10 rounded-full bg-zinc-950 border-2 border-zinc-700 flex items-center justify-center z-20 group-hover:border-zinc-400 transition-colors">
+                    <span class="text-[9px] sm:text-[13px] font-bold text-zinc-400 group-hover:text-white">04</span>
+                </div>
+                <div class="w-[46%] flex justify-start pl-3 sm:pl-8">
+                    <div class="glass-card p-4 sm:p-8 rounded-[16px] sm:rounded-[24px] text-left w-full relative overflow-hidden">
+                        <div class="text-[8px] sm:text-[11px] font-bold text-shopee mb-1.5 uppercase tracking-widest">Modul 4</div>
+                        <h3 class="text-[12px] sm:text-[18px] font-bold text-white mb-2 sm:mb-3 leading-snug">Tools Booster Penjualan</h3>
+                        <p class="text-[9.5px] sm:text-[14px] text-zinc-400 leading-relaxed">Memahami cara mengatur promosi dasar seperti diskon coret, voucher, dan penawaran berbatas waktu untuk memberikan penawaran kompetitif bagi pembeli.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative flex items-center w-full mb-10 sm:mb-16 group opacity-0 animate-fade-in-up" style="animation-delay: 300ms;">
+                <div class="w-[46%] flex justify-end pr-3 sm:pr-8">
+                    <div class="glass-card p-4 sm:p-8 rounded-[16px] sm:rounded-[24px] text-right w-full relative overflow-hidden">
+                        <div class="text-[8px] sm:text-[11px] font-bold text-shopee mb-1.5 uppercase tracking-widest">Modul 5</div>
+                        <h3 class="text-[12px] sm:text-[18px] font-bold text-white mb-2 sm:mb-3 leading-snug">Analisa Performa & Promosi</h3>
+                        <p class="text-[9.5px] sm:text-[14px] text-zinc-400 leading-relaxed">Panduan membaca metrik performa toko. Menilai efektivitas promosi yang sedang berjalan dan merencanakan evaluasi secara terukur berdasarkan data aktual.</p>
+                    </div>
+                </div>
+                <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-6 h-6 sm:w-10 sm:h-10 rounded-full bg-zinc-950 border-2 border-zinc-700 flex items-center justify-center z-20 group-hover:border-zinc-400 transition-colors">
+                    <span class="text-[9px] sm:text-[13px] font-bold text-zinc-400 group-hover:text-white">05</span>
+                </div>
+                <div class="w-[46%] hidden md:flex pl-8 items-center">
+                    <div class="text-[100px] font-black outline-text opacity-30 select-none">05</div>
+                </div>
+            </div>
+
+            <div class="relative flex items-center justify-end w-full mb-10 sm:mb-16 group opacity-0 animate-fade-in-up" style="animation-delay: 350ms;">
+                <div class="w-[46%] hidden md:flex justify-end pr-8 items-center">
+                    <div class="text-[100px] font-black outline-text opacity-30 select-none">06</div>
+                </div>
+                <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-6 h-6 sm:w-10 sm:h-10 rounded-full bg-zinc-950 border-2 border-zinc-700 flex items-center justify-center z-20 group-hover:border-zinc-400 transition-colors">
+                    <span class="text-[9px] sm:text-[13px] font-bold text-zinc-400 group-hover:text-white">06</span>
+                </div>
+                <div class="w-[46%] flex justify-start pl-3 sm:pl-8">
+                    <div class="glass-card p-4 sm:p-8 rounded-[16px] sm:rounded-[24px] text-left w-full relative overflow-hidden">
+                        <div class="text-[8px] sm:text-[11px] font-bold text-shopee mb-1.5 uppercase tracking-widest">Modul 6</div>
+                        <h3 class="text-[12px] sm:text-[18px] font-bold text-white mb-2 sm:mb-3 leading-snug">Tools Magnet Traffic</h3>
+                        <p class="text-[9.5px] sm:text-[14px] text-zinc-400 leading-relaxed">Memanfaatkan fitur seperti pesan siaran (broadcast) dan ekosistem afiliasi untuk menjangkau target audiens yang lebih luas secara efisien.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative flex items-center w-full mb-10 sm:mb-16 group opacity-0 animate-fade-in-up" style="animation-delay: 400ms;">
+                <div class="w-[46%] flex justify-end pr-3 sm:pr-8">
+                    <div class="glass-card p-4 sm:p-8 rounded-[16px] sm:rounded-[24px] text-right w-full relative overflow-hidden">
+                        <div class="text-[8px] sm:text-[11px] font-bold text-shopee mb-1.5 uppercase tracking-widest">Modul 7</div>
+                        <h3 class="text-[12px] sm:text-[18px] font-bold text-white mb-2 sm:mb-3 leading-snug">Evaluasi & Temukan Strategi</h3>
+                        <p class="text-[9.5px] sm:text-[14px] text-zinc-400 leading-relaxed">Menganalisa penyebab minimnya konversi, menangani produk yang stagnan, dan melakukan penyesuaian untuk mengoptimalkan operasional toko.</p>
+                    </div>
+                </div>
+                <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-6 h-6 sm:w-10 sm:h-10 rounded-full bg-zinc-950 border-2 border-zinc-700 flex items-center justify-center z-20 group-hover:border-zinc-400 transition-colors">
+                    <span class="text-[9px] sm:text-[13px] font-bold text-zinc-400 group-hover:text-white">07</span>
+                </div>
+                <div class="w-[46%] hidden md:flex pl-8 items-center">
+                    <div class="text-[100px] font-black outline-text opacity-30 select-none">07</div>
+                </div>
+            </div>
+
+            <div class="relative flex items-center justify-end w-full mb-10 sm:mb-16 group opacity-0 animate-fade-in-up" style="animation-delay: 450ms;">
+                <div class="w-[46%] hidden md:flex justify-end pr-8 items-center">
+                    <div class="text-[100px] font-black outline-text opacity-30 select-none">08</div>
+                </div>
+                <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-6 h-6 sm:w-10 sm:h-10 rounded-full bg-zinc-950 border-2 border-zinc-700 flex items-center justify-center z-20 group-hover:border-zinc-400 transition-colors">
+                    <span class="text-[9px] sm:text-[13px] font-bold text-zinc-400 group-hover:text-white">08</span>
+                </div>
+                <div class="w-[46%] flex justify-start pl-3 sm:pl-8">
+                    <div class="glass-card p-4 sm:p-8 rounded-[16px] sm:rounded-[24px] text-left w-full relative overflow-hidden">
+                        <div class="text-[8px] sm:text-[11px] font-bold text-shopee mb-1.5 uppercase tracking-widest">Modul 8</div>
+                        <h3 class="text-[12px] sm:text-[18px] font-bold text-white mb-2 sm:mb-3 leading-snug">Shopee Live & Video</h3>
+                        <p class="text-[9.5px] sm:text-[14px] text-zinc-400 leading-relaxed">Mempelajari persiapan teknis, penyusunan naskah interaktif, dan cara kerja algoritma siaran langsung serta video pendek sebagai saluran interaksi audiens.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative flex items-center w-full mb-10 sm:mb-16 group opacity-0 animate-fade-in-up" style="animation-delay: 500ms;">
+                <div class="w-[46%] flex justify-end pr-3 sm:pr-8">
+                    <div class="glass-card p-4 sm:p-8 rounded-[16px] sm:rounded-[24px] text-right w-full relative overflow-hidden">
+                        <div class="text-[8px] sm:text-[11px] font-bold text-shopee mb-1.5 uppercase tracking-widest">Modul 9</div>
+                        <h3 class="text-[12px] sm:text-[18px] font-bold text-white mb-2 sm:mb-3 leading-snug">Fondasi & Mindset Beriklan</h3>
+                        <p class="text-[9.5px] sm:text-[14px] text-zinc-400 leading-relaxed">Membangun pondasi logis sebelum menjalankan iklan. Memahami proses pelelangan kata kunci dan menyeleksi produk yang siap untuk dipromosikan.</p>
+                    </div>
+                </div>
+                <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-6 h-6 sm:w-10 sm:h-10 rounded-full bg-zinc-950 border-2 border-zinc-700 flex items-center justify-center z-20 group-hover:border-zinc-400 transition-colors">
+                    <span class="text-[9px] sm:text-[13px] font-bold text-zinc-400 group-hover:text-white">09</span>
+                </div>
+                <div class="w-[46%] hidden md:flex pl-8 items-center">
+                    <div class="text-[100px] font-black outline-text opacity-30 select-none">09</div>
+                </div>
+            </div>
+
+            <div class="relative flex items-center justify-end w-full group opacity-0 animate-fade-in-up" style="animation-delay: 550ms;">
+                <div class="w-[46%] hidden md:flex justify-end pr-8 items-center">
+                    <div class="text-[100px] font-black outline-text opacity-30 select-none">10</div>
+                </div>
+                <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-6 h-6 sm:w-10 sm:h-10 rounded-full bg-zinc-950 border-2 border-zinc-700 flex items-center justify-center z-20 group-hover:border-zinc-400 transition-colors">
+                    <span class="text-[9px] sm:text-[13px] font-bold text-zinc-400 group-hover:text-white">10</span>
+                </div>
+                <div class="w-[46%] flex justify-start pl-3 sm:pl-8">
+                    <div class="glass-card p-4 sm:p-8 rounded-[16px] sm:rounded-[24px] text-left w-full relative overflow-hidden border-zinc-600/40">
+                        <div class="text-[8px] sm:text-[11px] font-bold text-shopee mb-1.5 uppercase tracking-widest">Modul 10</div>
+                        <h3 class="text-[12px] sm:text-[18px] font-bold text-white mb-2 sm:mb-3 leading-snug">Optimasi Iklan Shopee</h3>
+                        <p class="text-[9.5px] sm:text-[14px] text-zinc-400 leading-relaxed">Membaca metrik laporan iklan aktif, menghentikan promosi yang kurang efektif, dan menyesuaikan alokasi anggaran pada iklan yang menunjukkan hasil positif.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="max-w-2xl mx-auto mt-14 sm:mt-24 text-center opacity-0 animate-fade-in-up pb-10">
+            <div class="relative p-6 sm:p-10 rounded-[24px] sm:rounded-[32px] bg-zinc-900/40 backdrop-blur-md border border-zinc-800 shadow-2xl">
+                
+                <div class="relative z-10">
+                    <h3 class="text-[20px] sm:text-[28px] font-bold text-white mb-2">Investasi untuk Toko Anda</h3>
+                    <p class="text-[12px] sm:text-[14px] text-zinc-400 max-w-sm mx-auto mb-6">
+                        Akses seluruh materi secara utuh dan mulai terapkan di operasional harian toko Anda.
+                    </p>
+
+                    <div class="flex flex-col items-center justify-center mb-6">
+                        <span class="text-[12px] sm:text-[14px] text-zinc-500 line-through font-medium mb-1">Normal: Rp 1.900.000</span>
+                        <div class="flex items-start gap-1.5 sm:gap-2">
+                            <span class="text-[14px] sm:text-[16px] font-bold text-zinc-300 mt-1 sm:mt-2">Rp</span>
+                            <span class="text-[36px] sm:text-[56px] font-black text-white leading-none">1.500.000</span>
+                        </div>
+                    </div>
+
+                    <a href="http://lynk.id/gocbd/vpqz1wmgrx3x/checkout" target="_blank" class="inline-flex items-center justify-center bg-white hover:bg-zinc-200 text-black font-bold py-3.5 sm:py-4 px-10 sm:px-12 rounded-full text-[11px] sm:text-[12px] tracking-widest uppercase transition-colors w-full sm:w-auto mb-4">
+                        Daftar Program
+                    </a>
+                    
+                    <p class="text-[10px] sm:text-[11px] text-zinc-500 font-medium">
+                        Sudah termasuk sesi private konsultasi secara online.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
