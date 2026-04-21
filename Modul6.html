@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modul 6: Tools Magnet Traffic Shopee</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Inter"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            100: '#e7e7e7',
+                            300: '#b0b0b0',
+                            400: '#888888',
+                            500: '#6d6d6d',
+                        },
+                        surface: '#121212',
+                        line: '#262626',
+                        shopee: '#EE4D2D'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #000000;
+        }
+        .mobile-container {
+            width: 100%;
+            max-width: 480px; 
+            margin: 0 auto;
+            background-color: #000000;
+            min-height: 100vh;
+            overflow-x: hidden;
+            font-size: 14px;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        
+        .glow-shopee {
+            box-shadow: 0 0 25px rgba(238, 77, 45, 0.15);
+        }
+        .text-glow {
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+        }
+
+        .btn-shopee-glow {
+            background: linear-gradient(135deg, #FF6633 0%, #EE4D2D 100%);
+            color: #ffffff;
+            box-shadow: 0 4px 15px rgba(238, 77, 45, 0.3);
+            transition: all 0.3s ease;
+            border-radius: 9999px;
+        }
+        .btn-shopee-glow:hover {
+            box-shadow: 0 6px 20px rgba(238, 77, 45, 0.5);
+            transform: translateY(-2px);
+        }
+
+        .glass-nav {
+            background: rgba(18, 18, 18, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-top: 1px solid rgba(255,255,255,0.05);
+        }
+    </style>
+</head>
+<body class="text-brand-100 antialiased relative">
+
+    <main class="mobile-container pb-24 relative">
+
+        <header class="py-4 px-5 bg-black/80 backdrop-blur-md sticky top-0 z-50 flex items-center gap-3">
+            <a href="https://cuanberkahdigital.web.id" class="w-8 h-8 flex items-center justify-center bg-surface rounded-full hover:bg-zinc-800 transition-colors border border-transparent">
+                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                </svg>
+            </a>
+            <div>
+                <h1 class="text-[12px] font-medium text-white tracking-widest uppercase">Modul Spesifik</h1>
+            </div>
+        </header>
+
+        <section class="px-4 pt-2 pb-6 relative">
+            <div class="w-full aspect-[4/3] rounded-2xl overflow-hidden relative glow-shopee">
+                <img src="https://www.image2url.com/r2/default/images/1776758528263-78bce552-c0a8-4f44-8468-e5683bf497a8.png" 
+                     alt="Modul Magnet Traffic" 
+                     class="w-full h-full object-cover opacity-90">
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+                
+                <div class="absolute bottom-4 left-4 w-8 h-8 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center border border-white/20">
+                    <img src="https://cdn.simpleicons.org/shopee/EE4D2D" alt="Shopee Logo" class="w-4 h-4 object-contain">
+                </div>
+            </div>
+        </section>
+
+        <section class="px-5 pb-6 text-center">
+            <div class="inline-block bg-shopee/10 border border-shopee/20 text-shopee text-[10px] font-medium px-3 py-1 rounded-full tracking-wider mb-3">
+                SHOPEE MASTERCLASS
+            </div>
+            <h2 class="text-[22px] font-semibold text-white leading-tight mb-2 text-glow">
+                Modul 6: Magnet Traffic
+            </h2>
+            <p class="text-[12px] text-zinc-400 font-medium tracking-wide">
+                Tarik Pembeli & Perluas Jangkauan.
+            </p>
+        </section>
+
+        <section class="px-5 py-2 space-y-6">
+            
+            <div class="bg-surface rounded-2xl p-5 shadow-sm relative overflow-hidden border border-transparent">
+                <div class="absolute -top-10 -right-10 w-24 h-24 bg-shopee/10 blur-[30px] rounded-full pointer-events-none"></div>
+                
+                <h3 class="text-[14px] font-medium text-white mb-2 flex items-center gap-2">
+                    <span class="w-1.5 h-4 bg-shopee rounded-full"></span> Datangkan Ribuan Mata
+                </h3>
+                <p class="text-[11.5px] text-zinc-400 leading-relaxed">
+                    Jangan hanya menunggu pembeli datang. Saatnya menjemput bola dengan memanfaatkan fitur canggih seperti <span class="text-white font-medium">pesan siaran (broadcast)</span> dan <span class="text-shopee font-medium">ekosistem afiliasi</span>. Pelajari cara menjangkau target audiens yang lebih luas secara efisien dan masif.
+                </p>
+            </div>
+
+            <div>
+                <h3 class="text-[14px] font-medium text-white mb-3 px-1">Materi Strategis:</h3>
+                <div class="space-y-3">
+                    
+                    <div class="flex items-start gap-3 p-3 rounded-xl hover:bg-surface transition-colors">
+                        <div class="w-6 h-6 bg-shopee/10 rounded-full flex items-center justify-center shrink-0 mt-0.5">
+                            <svg class="w-3 h-3 text-shopee" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="text-[12.5px] font-medium text-white mb-1">Pesan Siaran (Broadcast)</h4>
+                            <p class="text-[10.5px] text-zinc-400 leading-relaxed">Meracik pesan promo masal yang memancing <span class="text-white font-medium">pembelian ulang (repeat order)</span> dari followers dan pelanggan lama.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-3 p-3 rounded-xl hover:bg-surface transition-colors">
+                        <div class="w-6 h-6 bg-shopee/10 rounded-full flex items-center justify-center shrink-0 mt-0.5">
+                            <svg class="w-3 h-3 text-shopee" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="text-[12.5px] font-medium text-white mb-1">Jaringan Ekosistem Afiliasi</h4>
+                            <p class="text-[10.5px] text-zinc-400 leading-relaxed">Strategi menggandeng ratusan kreator <span class="text-shopee font-medium">Shopee Affiliate</span> untuk mempromosikan produkmu tanpa perlu bayar iklan di depan.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-3 p-3 rounded-xl hover:bg-surface transition-colors">
+                        <div class="w-6 h-6 bg-shopee/10 rounded-full flex items-center justify-center shrink-0 mt-0.5">
+                            <svg class="w-3 h-3 text-shopee" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="text-[12.5px] font-medium text-white mb-1">Optimasi Visibilitas Gratis</h4>
+                            <p class="text-[10.5px] text-zinc-400 leading-relaxed">Memaksimalkan fitur organik untuk terus menjaga <span class="text-white font-medium">engagement harian</span> agar toko tidak tenggelam dari beranda pembeli.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+        </section>
+
+        <div class="h-6"></div>
+
+    </main>
+
+    <div class="fixed bottom-0 left-0 right-0 z-50 glass-nav">
+        <div class="w-full max-w-[480px] mx-auto px-5 py-4 flex items-center justify-between">
+            <div>
+                <p class="text-[10px] text-zinc-400 mb-0.5">Investasi Modul 6</p>
+                <p class="text-[18px] font-medium text-white leading-none text-glow">Rp 150.000</p>
+            </div>
+            <a href="http://lynk.id/gocbd/880rp3pnrj86/checkout" target="_blank" rel="noopener noreferrer" class="btn-shopee-glow font-medium text-[12px] px-7 py-2.5 flex items-center gap-2">
+                Ambil Modul <span class="text-[14px] leading-none">&rarr;</span>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
