@@ -53,6 +53,22 @@
             -webkit-mask-image: linear-gradient(to right, transparent 0%, black 45%);
             mask-image: linear-gradient(to right, transparent 0%, black 45%);
         }
+        .text-glow {
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+        }
+        /* Custom TikTok Glow Button */
+        .btn-tiktok-glow {
+            background-color: #121212;
+            border: 1px solid rgba(37, 244, 238, 0.4); /* Cyan TikTok */
+            color: #ffffff;
+            box-shadow: 0 0 12px rgba(37, 244, 238, 0.25);
+            transition: all 0.3s ease;
+        }
+        .btn-tiktok-glow:hover {
+            border-color: rgba(254, 44, 85, 0.5); /* Pink TikTok */
+            box-shadow: 0 0 15px rgba(254, 44, 85, 0.4);
+            transform: scale(1.02);
+        }
     </style>
 </head>
 <body class="text-brand-100 antialiased relative">
@@ -86,7 +102,7 @@
             <div class="absolute right-0 top-0 bottom-0 w-[55%] h-full z-10">
                 <img src="https://image2url.com/r2/default/images/1775356473841-0438bdbd-2767-44a7-b366-2c0beb0f02ad.png" 
                      alt="Mentor" 
-                     class="w-full h-full object-cover mask-gradient-left opacity-90 grayscale hover:grayscale-0 transition-all duration-700">
+                     class="w-full h-full object-cover mask-gradient-left opacity-95 transition-all duration-700">
             </div>
         </section>
 
@@ -104,13 +120,20 @@
             <div class="absolute left-8 top-12 bottom-12 w-px bg-zinc-800 z-0"></div>
 
             <div class="relative z-10 pl-10">
-                <div class="absolute left-[7px] top-1.5 w-2.5 h-2.5 rounded-full bg-white ring-4 ring-black"></div>
+                <div class="absolute left-[7px] top-1.5 w-2.5 h-2.5 rounded-full bg-[#25F4EE] ring-4 ring-black shadow-[0_0_10px_rgba(37,244,238,0.5)]"></div>
                 <div class="bg-surface border border-zinc-800 rounded-[16px] p-5 hover:border-zinc-600 transition-colors shadow-lg">
                     <p class="text-[9px] font-bold text-zinc-500 tracking-widest uppercase mb-1">Fase 1: Modul 1 - 4</p>
                     <h3 class="text-[16px] font-black text-white leading-tight mb-2">Fondasi & Algoritma</h3>
-                    <p class="text-[11px] text-zinc-400 leading-relaxed">
-                        Langkah mutlak sebelum mulai berjualan. Kamu akan membedah cara kerja algoritma TikTok, riset menemukan produk yang pasti laku di pasaran, teknik membuat toko dari nol, hingga optimasi judul dan foto produk agar ramah mesin pencari.
+                    <p class="text-[11px] text-zinc-400 leading-relaxed mb-4">
+                        Langkah mutlak sebelum mulai berjualan. Kamu akan membedah <span class="text-[#25F4EE]">cara kerja algoritma TikTok</span>, riset <span class="text-white font-medium">menemukan produk yang pasti laku</span> di pasaran, teknik membuat toko dari nol, hingga optimasi judul dan foto produk agar ramah mesin pencari.
                     </p>
+                    <div class="pt-3 border-t border-zinc-800/50 flex flex-wrap items-center justify-between gap-2">
+                        <span class="text-[14px] font-medium text-white text-glow">Rp 500.000</span>
+                        <div class="flex items-center gap-1.5">
+                            <a href="TIKTOK1.html" class="bg-zinc-800/60 hover:bg-zinc-700 text-zinc-300 hover:text-white text-[10px] font-medium py-1.5 px-4 rounded-full transition-all border border-zinc-700/50">Detail</a>
+                            <a href="http://lynk.id/gocbd/dx47xrlegrz3/checkout" class="btn-tiktok-glow text-[10px] font-medium py-1.5 px-4 rounded-full">Checkout</a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -119,9 +142,16 @@
                 <div class="bg-surface border border-zinc-800 rounded-[16px] p-5 hover:border-zinc-600 transition-colors shadow-lg">
                     <p class="text-[9px] font-bold text-zinc-500 tracking-widest uppercase mb-1">Fase 2: Modul 5 - 8</p>
                     <h3 class="text-[16px] font-black text-white leading-tight mb-2">Branding & Konten Visual</h3>
-                    <p class="text-[11px] text-zinc-400 leading-relaxed">
-                        Ubah penonton yang sekadar lewat menjadi pembeli terhipnotis. Fase ini fokus membangun karakter toko yang kuat, struktur pembuatan video yang memancing klik, hingga rahasia membaca matriks data agar videomu sukses menembus FYP.
+                    <p class="text-[11px] text-zinc-400 leading-relaxed mb-4">
+                        Ubah penonton yang sekadar lewat menjadi pembeli terhipnotis. Fase ini fokus membangun <span class="text-white font-medium">karakter toko yang kuat</span>, struktur pembuatan video yang memancing klik, hingga rahasia membaca matriks data agar videomu sukses <span class="text-[#25F4EE]">menembus FYP</span>.
                     </p>
+                    <div class="pt-3 border-t border-zinc-800/50 flex flex-wrap items-center justify-between gap-2">
+                        <span class="text-[14px] font-medium text-white text-glow">Rp 500.000</span>
+                        <div class="flex items-center gap-1.5">
+                            <a href="TIKTOK2.html" class="bg-zinc-800/60 hover:bg-zinc-700 text-zinc-300 hover:text-white text-[10px] font-medium py-1.5 px-4 rounded-full transition-all border border-zinc-700/50">Detail</a>
+                            <a href="http://lynk.id/gocbd/53mg332y9dv9/checkout" class="btn-tiktok-glow text-[10px] font-medium py-1.5 px-4 rounded-full">Checkout</a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -130,9 +160,16 @@
                 <div class="bg-surface border border-zinc-800 rounded-[16px] p-5 hover:border-zinc-600 transition-colors shadow-lg">
                     <p class="text-[9px] font-bold text-zinc-500 tracking-widest uppercase mb-1">Fase 3: Modul 9 - 12</p>
                     <h3 class="text-[16px] font-black text-white leading-tight mb-2">Iklan GMV Max & Profit</h3>
-                    <p class="text-[11px] text-zinc-400 leading-relaxed">
-                        Trafik tinggi tidak ada artinya jika margin boncos. Di sini kamu akan mendalami perhitungan struktur biaya operasional, strategi menentukan harga jual kompetitif, dan eksekusi iklan GMV Max yang bisa disuntik modal lebih besar tanpa takut rugi.
+                    <p class="text-[11px] text-zinc-400 leading-relaxed mb-4">
+                        Trafik tinggi tidak ada artinya jika margin boncos. Di sini kamu akan mendalami perhitungan struktur biaya operasional, strategi <span class="text-white font-medium">menentukan harga jual kompetitif</span>, dan eksekusi <span class="text-[#25F4EE]">iklan GMV Max</span> yang bisa disuntik modal lebih besar tanpa takut rugi.
                     </p>
+                    <div class="pt-3 border-t border-zinc-800/50 flex flex-wrap items-center justify-between gap-2">
+                        <span class="text-[14px] font-medium text-white text-glow">Rp 700.000</span>
+                        <div class="flex items-center gap-1.5">
+                            <a href="TIKTOK3.html" class="bg-zinc-800/60 hover:bg-zinc-700 text-zinc-300 hover:text-white text-[10px] font-medium py-1.5 px-4 rounded-full transition-all border border-zinc-700/50">Detail</a>
+                            <a href="http://lynk.id/gocbd/k6gn6qm6qzq0/checkout" class="btn-tiktok-glow text-[10px] font-medium py-1.5 px-4 rounded-full">Checkout</a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -141,9 +178,16 @@
                 <div class="bg-surface border border-zinc-800 rounded-[16px] p-5 hover:border-zinc-600 transition-colors shadow-lg">
                     <p class="text-[9px] font-bold text-zinc-500 tracking-widest uppercase mb-1">Fase 4: Modul 13 - 16</p>
                     <h3 class="text-[16px] font-black text-white leading-tight mb-2">Live Streaming & Afiliasi</h3>
-                    <p class="text-[11px] text-zinc-400 leading-relaxed">
-                        Saatnya memperluas saluran distribusimu. Bangun arsitektur Live Streaming yang memicu antrean pesanan, manfaatkan dorongan iklan saat siaran, dan kelola ratusan kreator afiliasi untuk mempromosikan produkmu setiap hari secara pasif.
+                    <p class="text-[11px] text-zinc-400 leading-relaxed mb-4">
+                        Saatnya memperluas saluran distribusimu. Bangun arsitektur <span class="text-[#25F4EE]">Live Streaming</span> yang memicu antrean pesanan, manfaatkan dorongan iklan saat siaran, dan kelola <span class="text-white font-medium">ratusan kreator afiliasi</span> untuk mempromosikan produkmu setiap hari secara pasif.
                     </p>
+                    <div class="pt-3 border-t border-zinc-800/50 flex flex-wrap items-center justify-between gap-2">
+                        <span class="text-[14px] font-medium text-white text-glow">Rp 500.000</span>
+                        <div class="flex items-center gap-1.5">
+                            <a href="TIKTOK4.html" class="bg-zinc-800/60 hover:bg-zinc-700 text-zinc-300 hover:text-white text-[10px] font-medium py-1.5 px-4 rounded-full transition-all border border-zinc-700/50">Detail</a>
+                            <a href="http://lynk.id/gocbd/58q0lylpnkp3/checkout" class="btn-tiktok-glow text-[10px] font-medium py-1.5 px-4 rounded-full">Checkout</a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -152,9 +196,16 @@
                 <div class="bg-surface border border-zinc-800 rounded-[16px] p-5 hover:border-zinc-600 transition-colors shadow-lg">
                     <p class="text-[9px] font-bold text-zinc-500 tracking-widest uppercase mb-1">Fase 5: Modul 17 - 20</p>
                     <h3 class="text-[16px] font-black text-white leading-tight mb-2">Sistem Skala & Dominasi</h3>
-                    <p class="text-[11px] text-zinc-400 leading-relaxed">
-                        Tinggalkan pekerjaan harian dan bermainlah layaknya raksasa industri. Membaca pergerakan kompetitor, memaksimalkan omset pada promo tanggal kembar, serta membangun struktur tim khusus TikTok yang menjalankan bisnismu secara mandiri.
+                    <p class="text-[11px] text-zinc-400 leading-relaxed mb-4">
+                        Tinggalkan pekerjaan harian dan bermainlah layaknya raksasa industri. Membaca pergerakan kompetitor, memaksimalkan omset pada <span class="text-white font-medium">promo tanggal kembar</span>, serta membangun <span class="text-[#25F4EE]">tim khusus TikTok</span> yang menjalankan bisnismu secara mandiri.
                     </p>
+                    <div class="pt-3 border-t border-zinc-800/50 flex flex-wrap items-center justify-between gap-2">
+                        <span class="text-[14px] font-medium text-white text-glow">Rp 550.000</span>
+                        <div class="flex items-center gap-1.5">
+                            <a href="TIKTOK5.html" class="bg-zinc-800/60 hover:bg-zinc-700 text-zinc-300 hover:text-white text-[10px] font-medium py-1.5 px-4 rounded-full transition-all border border-zinc-700/50">Detail</a>
+                            <a href="http://lynk.id/gocbd/9lojlrqj1327/checkout" class="btn-tiktok-glow text-[10px] font-medium py-1.5 px-4 rounded-full">Checkout</a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
